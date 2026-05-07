@@ -264,9 +264,22 @@
   const projectsData = {
     acai: {
       title: 'Cardápio de Açaí',
-      description: 'Projeto feito para testar layout e experiência de usuário em um site de delivery de açaí. Cardápio mobile-first com categorias (Açaís, Combos, Bebidas), destaques de itens mais vendidos e fluxo de montagem do pedido.',
-      tags: ['HTML', 'CSS', 'JavaScript', 'Mobile-first', 'UI/UX'],
-      images: ['assets/print2.jpg', 'assets/print1.jpg'],
+      description: 'Cardápio digital pensado pra delivery: feito pra abrir bem no celular, com categorias (Açaís, Combos, Bebidas), destaques dos itens mais vendidos e fluxo simples de montar o pedido. Ideal pra açaiterias e lanchonetes que querem facilitar a vida do cliente.',
+      tags: ['Site', 'Cardápio', 'Delivery', 'Celular'],
+      images: ['assets/projeto1/print2.jpg', 'assets/projeto1/print1.jpg'],
+      note: 'Projeto fictício criado para portfolio. Marca, produtos, preços e imagens são meramente ilustrativos — usados apenas para compor a apresentação visual do layout. O objetivo é demonstrar a criação de um cardápio digital responsivo, organização visual e fluxo de pedido.',
+    },
+    moda: {
+      title: 'Loja de Moda Feminina',
+      description: 'Catálogo digital com vitrine de produtos, filtros por categoria, carrinho de compras e finalização do pedido direto pelo WhatsApp. Inclui seções de prova social (depoimentos), apresentação da marca e chamadas pra contato. Visual feminino e colorido, pensado pra abrir bem no celular.',
+      tags: ['Site', 'Catálogo', 'Carrinho', 'WhatsApp'],
+      images: [
+        'assets/projeto2/Print1.png',
+        'assets/projeto2/Print2.png',
+        'assets/projeto2/Print3.png',
+        'assets/projeto2/Print4.png',
+      ],
+      note: 'Projeto fictício criado para portfolio. A marca, os produtos, depoimentos, preços, nomes de clientes e imagens usados no site são meramente ilustrativos. O objetivo é demonstrar habilidades de criação de landing page e e-commerce responsivo, organização visual, catálogo de produtos, seções de prova social e chamada para ação via WhatsApp.',
     },
   };
 
@@ -277,9 +290,11 @@
       <h3>${data.title}</h3>
       <p>${data.description}</p>
       <div class="modal__chips">${data.tags.map((t) => `<span>${t}</span>`).join('')}</div>
+      ${data.images.length > 1 ? `<p class="modal__hint"><span>←</span> arraste pro lado <span>→</span></p>` : ''}
       <div class="modal__gallery">
         ${data.images.map((src) => `<img src="${src}" alt="${data.title}" loading="lazy">`).join('')}
       </div>
+      ${data.note ? `<div class="modal__note"><span class="modal__note-text">${data.note}</span></div>` : ''}
     `;
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
