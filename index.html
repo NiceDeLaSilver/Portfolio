@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#06060d" />
+    <meta name="description" content="Renan — Portfolio" />
+    <title>Renan — Designer & Desenvolvedor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- Cursor glow -->
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+    <!-- Cinematic loader -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__mark">
+        <span>R</span>
+      </div>
+      <div class="loader__bar"><span></span></div>
+    </div>
+
+    <!-- Ambient background -->
+    <div class="ambient" aria-hidden="true">
+      <div class="blob blob--purple"></div>
+      <div class="blob blob--blue"></div>
+      <div class="blob blob--violet"></div>
+      <div class="grid"></div>
+      <div class="noise"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+      <a href="#top" class="nav__logo" aria-label="Início">
+        <span class="nav__dot"></span>
+        <span>Marcos Renan</span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#about">Sobre</a>
+        <a href="#work">Projetos</a>
+        <a href="#skills">Serviços</a>
+        <a href="#contact" class="nav__cta">Contato</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__badge reveal">
+            <span class="pulse"></span>
+            Disponível para novos projetos · 2026
+          </div>
+
+          <h1 class="hero__title reveal">
+            Criando experiências<br />
+            digitais <em>modernas</em><br />
+            <span class="grad">que ganham vida.</span>
+          </h1>
+
+          <p class="hero__sub reveal">
+            Desenvolvo projetos digitais modernos, unindo design, tecnologia e
+            soluções para web, negócios e comércios locais.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a href="#work" class="btn btn--primary">
+              Ver Projetos
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M5 12h14M13 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost">Vamos Conversar</a>
+          </div>
+
+          <div class="hero__meta reveal">
+            <div><strong>1+</strong><span>Projetos</span></div>
+            <div class="divider"></div>
+            <div><strong>5 meses</strong><span>De aprendizado</span></div>
+            <div class="divider"></div>
+            <div><strong>∞</strong><span>24/7 Aprendendo</span></div>
+          </div>
+        </div>
+
+        <div class="hero__scroll" aria-hidden="true">
+          <span></span>
+          <p>Role</p>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section about" id="about">
+        <div class="section__head reveal">
+          <span class="eyebrow">01 — Sobre</span>
+          <h2>
+            Design & desenvolvimento<br /><span class="grad"
+              >projetos digitais modernos.</span
+            >
+          </h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__card glass reveal">
+            <div class="avatar">
+              <div class="avatar__ring"></div>
+              <div class="avatar__inner">
+                <img src="assets/avatar.jpg" alt="Marcos Renan" />
+              </div>
+            </div>
+            <h3>Prazer, Marcos Renan 👋</h3>
+            <p>
+              Crio interfaces e projetos digitais com foco em design limpo e soluções modernas para web. Trabalho com landing pages, ideias de produtos e automações para projetos e negócios. Também tenho experiência com lógica e desenvolvimento de sistemas em Luau.
+            </p>
+            <div class="chips">
+              <span>UI</span>
+              <span>Web</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Luau</span>
+              <span>Python</span>
+              <span>IA</span>
+              <span>Automação</span>
+            </div>
+          </div>
+
+          <div class="about__side">
+            <div class="info glass reveal">
+              <p class="info__label">Localização</p>
+              <p class="info__value">Remoto · Brasil</p>
+            </div>
+            <div class="info glass reveal">
+              <p class="info__label">Atualmente</p>
+              <p class="info__value">Aberto para colaborações</p>
+            </div>
+            <div class="info glass reveal">
+              <p class="info__label">Foco</p>
+              <p class="info__value">UI · Web · IA & Automações</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section work" id="work">
+        <div class="section__head reveal">
+          <span class="eyebrow">02 — Projetos em Destaque</span>
+          <h2>Trabalhos <span class="grad">selecionados.</span></h2>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project__media" data-color="violet">
+              <div class="project__shape"></div>
+              <img
+                class="project__img"
+                src="assets/print2.jpg"
+                alt="Cardápio de Açaí"
+                onerror="this.style.display = 'none'"
+              />
+              <span class="project__tag">Web · Delivery</span>
+            </div>
+            <div class="project__body">
+              <h3>Cardápio de Açaí</h3>
+              <p>
+                Projeto feito para testar layout e experiência de usuário em um
+                site de delivery de açaí. Cardápio mobile-first com categorias,
+                destaques e fluxo de montagem do pedido.
+              </p>
+              <div class="project__foot">
+                <span>HTML · CSS · JavaScript · Node.js</span>
+                <button
+                  type="button"
+                  class="project__btn"
+                  data-project="acai"
+                  aria-label="Ver projeto Cardápio de Açaí"
+                >
+                  Ver
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M5 12h14M13 5l7 7-7 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--soon reveal">
+            <div class="project__media" data-color="indigo">
+              <div class="project__shape"></div>
+              <span class="project__tag">Em breve</span>
+            </div>
+            <div class="project__body">
+              <h3>Mais projetos a caminho</h3>
+              <p>
+                Em breve novos trabalhos pessoais e estudos de interface por
+                aqui. Volte logo. ✦
+              </p>
+              <div class="project__foot">
+                <span>Em desenvolvimento</span>
+                <span class="arrow">+</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section skills" id="skills">
+        <div class="section__head reveal">
+          <span class="eyebrow">03 — Serviços & Habilidades</span>
+          <h2>O que eu <span class="grad">faço.</span></h2>
+        </div>
+
+        <div class="skills__grid">
+          <div class="skill glass reveal">
+            <div class="skill__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path d="M4 6h16M4 12h16M4 18h10" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>UI Design</h3>
+            <p>Interfaces simples, modernas e organizadas.</p>
+          </div>
+
+          <div class="skill glass reveal">
+            <div class="skill__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path
+                  d="M8 3 4 12l4 9M16 3l4 9-4 9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Desenvolvimento Web</h3>
+            <p>Sites modernos, responsivos e focados em experiência.</p>
+          </div>
+
+          <div class="skill glass reveal">
+            <div class="skill__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <path
+                  d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"
+                />
+              </svg>
+            </div>
+            <h3>Landing Pages</h3>
+            <p>Criação de páginas modernas com foco visual.</p>
+          </div>
+
+          <div class="skill glass reveal">
+            <div class="skill__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path
+                  d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Animações</h3>
+            <p>Explorando microinterações e transições suaves.</p>
+          </div>
+
+          <div class="skill glass reveal">
+            <div class="skill__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <rect x="4" y="4" width="16" height="16" rx="3" />
+                <path d="M4 10h16M10 4v16" />
+              </svg>
+            </div>
+            <h3>IA & Automações</h3>
+            <p>Soluções e automações para ideias, projetos e negócios.</p>
+          </div>
+
+          <div class="skill glass reveal">
+            <div class="skill__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z" />
+                <path
+                  d="M9 12l2 2 4-4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Projetos Digitais</h3>
+            <p>Interfaces, páginas e soluções desenvolvidas para web.</p>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section class="section contact" id="contact">
+        <div class="contact__card glass reveal">
+          <span class="eyebrow centered">04 — Vamos Criar</span>
+          <h2>
+            Tem um projeto em mente?<br /><span class="grad"
+              >Vamos torná-lo inesquecível.</span
+            >
+          </h2>
+          <p>
+            Estou aceitando novos projetos. Me chama — costumo responder em até
+            um dia.
+          </p>
+
+          <div class="contact__cta">
+            <a
+              href="https://wa.me/5584999558225"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--primary"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.5 3.5A11 11 0 0 0 3.6 17.3L2 22l4.8-1.6a11 11 0 0 0 16.7-9.4 11 11 0 0 0-3-7.5zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.9 1 1-2.8-.2-.3A8 8 0 1 1 12 20zm4.6-6c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.1-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.3-.4.2-.4.7-1.3a.5.5 0 0 0 0-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-1 2.3c0 1.3 1 2.6 1.1 2.8s2 3 4.8 4.2a16 16 0 0 0 1.6.6 3.8 3.8 0 0 0 1.7.1c.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.3-.2-.5-.3z"
+                />
+              </svg>
+              WhatsApp
+            </a>
+            <a
+              href="https://instagram.com/renxn.code"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--ghost"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+              </svg>
+              Instagram
+            </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=renanmarcos605@gmail.com"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--ghost"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path
+                  d="m3 7 9 6 9-6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              E-mail
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__row">
+          <span>© 2026 Renan. Feito com cuidado.</span>
+          <div class="footer__links">
+            <a
+              href="https://instagram.com/renxn.code"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              >Instagram</a
+            >
+            <a
+              href="https://wa.me/5584999558225"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+              >WhatsApp</a
+            >
+          </div>
+        </div>
+      </footer>
+
+      <!-- Project modal -->
+      <div
+        class="modal"
+        id="modal"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <div class="modal__backdrop" data-modal-close></div>
+        <div class="modal__panel" role="document">
+          <button
+            type="button"
+            class="modal__close"
+            data-modal-close
+            aria-label="Fechar"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M6 6l12 12M18 6 6 18" stroke-linecap="round" />
+            </svg>
+          </button>
+          <div class="modal__content" id="modalContent"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
